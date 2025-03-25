@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafsir Al-Qur'an</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="./style.css">
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyui themes -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+<body data-theme="forest" class="flex flex-col items-center p-5 bg-base-200">
+
+    <h1 class="text-3xl font-bold text-center mb-4
+    ">Tafsir Al-Qur'an</h1>
+    
+    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+        <label class="fieldset-label">Surat</label>
+        <input type="text" class="input" id="inputSurat" placeholder="Nomor Surat" />
+        <label class="fieldset-label">Ayat</label>
+        <input type="text" class="input" id="inputAyat" placeholder="Nomor Ayat" />
+        <button class="btn btn-primary mt-4" onclick="cariTafsir()">Cari Tafsir</button>
+      </fieldset>
+    <div id="hasilTafsir" class="mt-5 p-5 mb-5"></div>
+
+    <!-- footer -->
+    <footer class="footer sm:footer-horizontal footer-center text-base-content p-4">
+        <aside>
+            <p>Copyright © <script>document.write(new Date().getFullYear());</script> - All right reserved by <a href="https://github.com/mshandywinata" target="_blank">Shandy</a></p>
+        </aside>
+    </footer>
+</body>
+
+<!-- script -->
+<script src="script.js"></script>
+</html>
